@@ -51,15 +51,37 @@ header nav ul li {
     padding: 15px;
 }
 
+
+
 header nav ul li a{
+    position: relative;
     color: black;
     font-size: 18px;
+}
+
+header nav ul li a::after{
+    content: "";
+    background-color: #425fa2;
+    display: block;
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+header nav ul li a:hover::after{
+    width: 100%;
 }
 
 header .buy_now{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+header .buy_now a::after{
+    content: "";
 }
 
 header .buy_now a{
