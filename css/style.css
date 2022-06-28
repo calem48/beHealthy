@@ -390,6 +390,62 @@ header .mobile i{
 
 
 /**** start meet *****/
+.our_services {
+    padding: 100px 0;
+}
+.our_services .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(48%,1fr));
+    gap: 24px;
+}
+
+.our_services .container .info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.our_services .container .info h1{
+    font-size: 45px;
+}
+
+.our_services .container .info p{
+    width: 70%;
+    padding: 25px 0;
+    line-height: 23px;
+}
+
+.our_services .container .info a{
+    display: inline-block;
+    background-color: #4665a7;
+    padding: 13px 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+.our_services .container .services{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28%,1fr));
+    gap: 25px;
+}
+
+@media(max-width:646px) {
+    .our_services .container .info{
+        align-items: center;
+        text-align: center;
+    }
+
+    .our_services .container{
+        gap: 50px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .our_services .container .services {
+        grid-template-columns: repeat(auto-fit,minmax(35%,1fr));
+    }
+ }
 /**** end meet *****/
 
 
