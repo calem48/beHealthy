@@ -1,5 +1,5 @@
 let header = document.querySelector("header")
-console.log(header);
+
 
 window.addEventListener("scroll", function () {
     if (this.scrollY > 0) {
@@ -8,3 +8,4 @@ window.addEventListener("scroll", function () {
         header.classList.remove("active")
     }
 })
+
