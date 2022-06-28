@@ -295,25 +295,35 @@ header .mobile i{
 
 
 /**** start meet *****/
-.our-meet .container{
+.our-meet {
     padding: 50px 0;
-    display: flex;
+}
+.our-meet .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(48%,1fr));
+    gap: 20px;
     align-items: center;
 }
-
-.our-meet .container .image{
-    width: 50%;
-}
-
 .our-meet .container .image img{
     width: 100%;
 }
-.our-meet .container .info{
-    width: 50%;
+
+.our-meet .container .info h1{
+    font-size:45px
 }
-.our-meet .container .info h1{}
-.our-meet .container .info p{}
-.our-meet .container .info a{}
+.our-meet .container .info p{
+    padding: 20px 0;
+    line-height: 23px;
+}
+
+.our-meet .container .info a{
+    display: block;
+    width: fit-content;
+    background-color: #4665a7;
+    padding: 13px 30px;
+    color: white;
+    border-radius: 10px;
+}
 
 
 
