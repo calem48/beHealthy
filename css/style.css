@@ -225,7 +225,7 @@ header .mobile i{
 .emergency{
     /* background-color: #8ecaf11f; */
     background-color: #f9fdfe;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .emergency .box{
     padding: 35px 15px;
@@ -237,7 +237,7 @@ header .mobile i{
 .emergency .container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(31%,1fr));
-    gap: 27px;
+    gap: 32px;
     align-items: center;
     text-align: center;
 }
@@ -296,7 +296,7 @@ header .mobile i{
 
 /**** start meet *****/
 .our-meet {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 .our-meet .container{
     display: grid;
@@ -331,8 +331,62 @@ header .mobile i{
 
 /**** end meet *****/
 
-/**** start meet *****/
-/**** end meet *****/
+/**** doctors *****/
+.doctors{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.doctors .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+    gap: 25px;
+}
+
+.doctors .container .box img{
+    width: 100%;
+}
+
+.doctors .container .box h3{
+    padding: 10px 0;
+    
+}
+
+.doctors .container .box h4{
+    color: #425fa2;
+}
+
+.doctors .container .box p{
+    padding: 10px 0;
+    
+}
+
+.doctors .container .box .btns{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.doctors .container .box a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 0;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: #ebf1f3;
+    color: #425fa2;
+}
+
+
+@media (max-width: 575.98px) {
+    .doctors .container{
+         grid-template-columns: repeat(auto-fill,minmax(100%,1fr)) !important;
+     }
+ }
+
+/**** end doctors *****/
 
 
 /**** start meet *****/
