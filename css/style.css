@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,14 +8,14 @@
 
 
 
-.container{
+.container {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
 
 
-header{
+header {
     position: fixed;
     padding: 30px 0;
     top: 0;
@@ -25,17 +25,17 @@ header{
     z-index: 222;
 }
 
-header.active{
+header.active {
     padding: 15px 0;
     background-color: white;
-    box-shadow: 0px 1px 10px #ccc;
+    box-shadow: 0px 1px 10px -4px #ccc;
 }
 
-header .logo img{
+header .logo img {
     width: 115px;
 }
 
-header .container{
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,13 +54,13 @@ header nav ul li {
 
 
 
-header nav ul li a{
+header nav ul li a {
     position: relative;
     color: black;
     font-size: 18px;
 }
 
-header nav ul li a::after{
+header nav ul li a::after {
     content: "";
     background-color: #425fa2;
     display: block;
@@ -71,21 +71,21 @@ header nav ul li a::after{
     transition: 0.3s ease;
 }
 
-header nav ul li a:hover::after{
+header nav ul li a:hover::after {
     width: 100%;
 }
 
-header .buy_now{
+header .buy_now {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-header .buy_now a::after{
+header .buy_now a::after {
     content: "";
 }
 
-header .buy_now a{
+header .buy_now a {
     display: flex;
     gap: 10px;
     padding: 13px 30px;
@@ -96,27 +96,25 @@ header .buy_now a{
     background-image: linear-gradient(76deg, #425fa2, #7fb3e0);
 }
 
-header .buy_now i {
-
-}
+header .buy_now i {}
 
 header .mobile {
     display: none;
 }
 
-header .mobile i{
+header .mobile i {
     font-size: 25px;
 }
 
 @media (max-width: 991.98px) {
-    header nav{
+    header nav {
         display: none;
     }
 
-    header .buy_now{
+    header .buy_now {
         display: none;
     }
-    
+
     header .mobile {
         display: block;
     }
@@ -125,20 +123,22 @@ header .mobile i{
 
 
 /**** about slider *****/
-.slider{
+.slider {
     position: relative;
     height: 650px;
     /* background-color: #8ecaf11f; */
     /* background-color: #8ecaf112; */
-    background-color: #f9fdfe;
+    /* background-color: #f9fdfe; */
+    background-color: #eff6fa;
+
 }
 
-.slider .bg{
+.slider .bg {
     position: absolute;
 }
 
 
-.slider .container{
+.slider .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -146,7 +146,7 @@ header .mobile i{
 }
 
 
-.slider .container .info{
+.slider .container .info {
     flex-basis: 60%;
 }
 
@@ -172,86 +172,88 @@ header .mobile i{
     gap: 30px;
 }
 
-.slider .container .info .btns a:first-of-type{
+.slider .container .info .btns a:first-of-type {
     background-color: #4665a7;
     padding: 13px 30px;
     color: white;
     border-radius: 10px;
 }
 
-.slider .container .info .btns a:last-child{
+.slider .container .info .btns a:last-child {
     color: black;
 }
 
-.slider .container .image{
+.slider .container .image {
     flex-basis: 40%;
 }
 
-.slider .container .image img{
+.slider .container .image img {
     width: 100%;
 }
 
 
-@media (max-width: 767.98px){
+@media (max-width: 767.98px) {
+
     .slider .container .info,
     .slider .container .image {
         flex-basis: 50% !important;
     }
 
-    .slider .container .info h3{
+    .slider .container .info h3 {
         font-size: 15px;
     }
 
-    .slider .container .info h1{
+    .slider .container .info h1 {
         font-size: 36px !important;
     }
 }
 
-@media (max-width: 575.98px){
-    .slider .container .info{
+@media (max-width: 575.98px) {
+    .slider .container .info {
         flex-basis: 100% !important;
     }
 
-    .slider .container .image{
+    .slider .container .image {
         display: none;
     }
-    
+
 }
 
 /**** end about slider *****/
 
 
 /**** start emergency *****/
-.emergency{
+.emergency {
     /* background-color: #8ecaf11f; */
     background-color: #f9fdfe;
     padding: 100px 0;
 }
-.emergency .box{
+
+.emergency .box {
     padding: 35px 15px;
     background-color: white;
     box-shadow: 0px 0px 5px -3px #009bff94;
     border-radius: 10px;
 }
 
-.emergency .container{
+.emergency .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(31%,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(31%, 1fr));
     gap: 32px;
     align-items: center;
     text-align: center;
 }
 
-.emergency .container .box h2{}
+.emergency .container .box h2 {}
 
-.emergency .container .box p{
+.emergency .container .box p {
     padding: 20px 0;
     width: 75%;
     margin: 0 auto;
     line-height: 25px;
 }
 
-.emergency .container .box a{
+.emergency .container .box a {
     display: block;
     width: fit-content;
     margin: 0 auto;
@@ -264,7 +266,7 @@ header .mobile i{
     transition: 0.3s;
 }
 
-.emergency .container .box a::before{
+.emergency .container .box a::before {
     content: "";
     display: block;
     position: absolute;
@@ -275,18 +277,19 @@ header .mobile i{
     left: -100%;
     transition: 0.3s;
 }
-.emergency .container .box a:hover::before{
+
+.emergency .container .box a:hover::before {
     left: 0;
 }
 
-.emergency .container .box a:hover{
+.emergency .container .box a:hover {
     color: black;
 }
 
 
 @media (max-width: 575.98px) {
-   .emergency .container{
-        grid-template-columns: repeat(auto-fill,minmax(100%,1fr)) !important;
+    .emergency .container {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
     }
 }
 
@@ -297,26 +300,30 @@ header .mobile i{
 /**** start meet *****/
 .our-meet {
     padding: 100px 0;
+    background-color: #eff6fa;
 }
-.our-meet .container{
+
+.our-meet .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(48%,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
     gap: 20px;
     align-items: center;
 }
-.our-meet .container .image img{
+
+.our-meet .container .image img {
     width: 100%;
 }
 
-.our-meet .container .info h1{
-    font-size:45px
+.our-meet .container .info h1 {
+    font-size: 45px
 }
-.our-meet .container .info p{
+
+.our-meet .container .info p {
     padding: 20px 0;
     line-height: 23px;
 }
 
-.our-meet .container .info a{
+.our-meet .container .info a {
     display: block;
     width: fit-content;
     background-color: #4665a7;
@@ -332,42 +339,42 @@ header .mobile i{
 /**** end meet *****/
 
 /**** doctors *****/
-.doctors{
+.doctors {
     padding: 100px 0;
     text-align: center;
 }
 
-.doctors .container{
+.doctors .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     gap: 25px;
 }
 
-.doctors .container .box img{
+.doctors .container .box img {
     width: 100%;
 }
 
-.doctors .container .box h3{
+.doctors .container .box h3 {
     padding: 10px 0;
-    
+
 }
 
-.doctors .container .box h4{
+.doctors .container .box h4 {
     color: #425fa2;
 }
 
-.doctors .container .box p{
+.doctors .container .box p {
     padding: 10px 0;
-    
+
 }
 
-.doctors .container .box .btns{
+.doctors .container .box .btns {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.doctors .container .box a{
+.doctors .container .box a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,41 +388,43 @@ header .mobile i{
 
 
 @media (max-width: 575.98px) {
-    .doctors .container{
-         grid-template-columns: repeat(auto-fill,minmax(100%,1fr)) !important;
-     }
- }
+    .doctors .container {
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+    }
+}
 
 /**** end doctors *****/
 
 
-/**** start meet *****/
+/**** start services *****/
 .our_services {
     padding: 100px 0;
+    background-color: #eff6fa;
 }
-.our_services .container{
+
+.our_services .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(48%,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
     gap: 24px;
 }
 
-.our_services .container .info{
+.our_services .container .info {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.our_services .container .info h1{
+.our_services .container .info h1 {
     font-size: 45px;
 }
 
-.our_services .container .info p{
+.our_services .container .info p {
     width: 70%;
     padding: 25px 0;
     line-height: 23px;
 }
 
-.our_services .container .info a{
+.our_services .container .info a {
     display: inline-block;
     background-color: #4665a7;
     padding: 13px 30px;
@@ -423,38 +432,105 @@ header .mobile i{
     border-radius: 10px;
 }
 
-.our_services .container .services{
+.our_services .container .services {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(28%,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
     gap: 25px;
 }
 
 @media(max-width:646px) {
-    .our_services .container .info{
+    .our_services .container .info {
         align-items: center;
         text-align: center;
     }
 
-    .our_services .container{
+    .our_services .container {
         gap: 50px !important;
     }
 }
 
 @media (max-width: 575.98px) {
     .our_services .container .services {
-        grid-template-columns: repeat(auto-fit,minmax(35%,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(35%, 1fr));
     }
- }
+}
+
 /**** end meet *****/
 
 
-/**** start meet *****/
-/**** end meet *****/
+/**** start contact *****/
+.contact {
+    padding: 100px 0;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    align-items: center;
+    gap: 25px;
+}
+
+.contact .container .image {
+    background-image: url("../img/Emergency.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.contact .container .info h1 {
+    font-size: 43px;
+}
+
+.contact .container .info h3 {
+    padding: 20px 0;
+}
+
+.contact .container .info p {
+    line-height: 24px;
+}
 
 
-/**** start meet *****/
-/**** end meet *****/
+
+
+/**** end contact *****/
+
+
+/**** start footer *****/
+footer {
+    padding: 40px 0;
+    background-color: #eff6fa;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+footer .top-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .nav li a {
+    display: inline-block;
+    padding: 5px 0;
+    color: black;
+}
+
+footer .contact-us p {
+    padding: 5px 0;
+}
+
+footer .button-footer {
+    padding: 40px 0;
+}
+
+/**** end footer *****/
 
 
 /**** start meet *****/
